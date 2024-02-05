@@ -5,7 +5,7 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <title>PHP Badwords</title>
 
         <!-- CSS -->
@@ -13,9 +13,26 @@
 
     </head>
 
-    <body>
-        
+    <body class="bg-success">
 
+        <div class="container text-warning">
+
+            <h1 class="text-danger text-center">Inserisci il tuo paragrafo e la parola da censurare</h1>
+
+            <form class="p-5 text-center" action="index.php" method="GET">
+    
+                <label for="paragraph" class="form-label"><span class="fs-1">Paragrafo:</span></label>
+                <textarea class="form-control mb-3" name="paragraph" id="paragraph" rows="4" cols="50" required></textarea>
+                <label for="badWord" class="form-label"><span class="fs-3">Parola da censurare:</span></label>
+                <input type="text" name="badWord" id="badWord" required>
+                <button type="submit" class="btn btn-danger mb-2 mx-2">Start Censor!</button>
+    
+            </form>
+
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 
 </html>
